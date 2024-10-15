@@ -5,6 +5,7 @@ import { HiMenuAlt1 } from "react-icons/hi";
 import { RxCross1 } from "react-icons/rx";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
+import DarkMode from "./DarkMode";
 import ResponsiveMenu from "./ResponsiveMenu";
 
 export const NavbarLinks = [
@@ -123,6 +124,7 @@ const Navbar = () => {
               <button className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full">
                 Book Now
               </button>
+              <DarkMode />
 
               {/* Mobile Hamburger Menu */}
               <div className="md:hidden block">
