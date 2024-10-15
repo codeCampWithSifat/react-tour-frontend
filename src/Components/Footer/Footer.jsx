@@ -7,7 +7,6 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import FooterLogo from "../../assets/logo.png";
-import NatureVid from "../../assets/video/footer.mp4";
 
 const FooterLinks = [
   {
@@ -31,17 +30,9 @@ const FooterLinks = [
 const Footer = () => {
   return (
     <>
-      <div className=" dark:bg-gray-950 py-10 relative overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          className="absolute right-0 top-0 h-full overflow-hidden w-full object-cover z-[-1]"
-        >
-          <source src={NatureVid} type="video/mp4" />
-        </video>
+      <div className=" bg-gray-800 py-10 relative text-white overflow-hidden mt-5">
         <div className="container">
-          <div className="grid md:grid-cols-3 py-5 bg-white/80 backdrop-blur-sm rounded-t-xl">
+          <div className="grid md:grid-cols-3 py-5  backdrop-blur-sm rounded-t-xl">
             <div className="py-8 px-4">
               <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
                 <img src={FooterLogo} alt="" className="max-h-[60px]" />
@@ -88,10 +79,7 @@ const Footer = () => {
                         key={link.title}
                         className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200"
                       >
-                        <Link
-                          to={link.link}
-                          onClick={() => window.scrollTo(0, 0)}
-                        >
+                        <Link to={link.link}>
                           <span>&#11162;</span>
                           <span>{link.title}</span>
                         </Link>
@@ -111,10 +99,7 @@ const Footer = () => {
                         key={link.title}
                         className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200"
                       >
-                        <Link
-                          to={link.link}
-                          onClick={() => window.scrollTo(0, 0)}
-                        >
+                        <Link to={link.link}>
                           <span>&#11162;</span>
                           <span>{link.title}</span>
                         </Link>
@@ -134,10 +119,7 @@ const Footer = () => {
                         key={link.title}
                         className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200"
                       >
-                        <Link
-                          to={link.link}
-                          onClick={() => window.scrollTo(0, 0)}
-                        >
+                        <Link to={link.link}>
                           <span>&#11162;</span>
                           <span>{link.title}</span>
                         </Link>
@@ -149,8 +131,8 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <div className="text-center py-5 border-t-2 border-gray-300/50 bg-primary text-white">
-              @copyright 2024 All rights reserved || Made with ❤️ by Dilshad
+            <div className="text-center py-5 border-t-2 border-gray-300/50 text-white">
+              @copyright 2024 All rights reserved || Made with ❤️ by sayedSifat
             </div>
           </div>
         </div>
